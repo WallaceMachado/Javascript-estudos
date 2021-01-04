@@ -9,5 +9,23 @@
     <button onclick="window.location.href='https://sujeitoprogramador.com';">ir ao sujeito programador</button>
     <button onclick="window.location.href='contato.html';">ir a pagina local</button>
     <button onclick="window.location.href=window.location.href;">atualizar pagina</button>
+
+    <div id="area">bem vindo ...</div>
+
+    <br/>
+
+    <button onclick="document.getElementById('area').innerHTML = 'bem vindo ' + prompt('Qual seu nome?');">entrar</button>
+
+    <br/> <br/>
+
+    <div id="area">Qual o nome do botão?</div>
+
+    <br/>
+
+    <button onclick="this.innerHTML = prompt('Qual seu nome?');">qual o nome?</button>
+
+
+
+
 </body>
 </html>
