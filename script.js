@@ -1,21 +1,11 @@
-
-
-var lista = ["wallace","lucia","Fran"];
-var x=0;
-while(x < 10) {
-    document.write("</br> o valor é: " + x);
-    x++;
-
+function acao(){
+    document.write("executando...<br/>");
 }
 
-for (a = 0; a<10; a++){
-    document.write("</br> o valor é: " + a);
-     
-}
+//executa de tempo em tempo
 
+//setInterval(acao,1000); // executa a cada 1 segundo
 
+//pesquisar como parar
 
-
-
-
-
+//setTimeout(acao, 3000);// executa após 3 segundos uma unica vez
