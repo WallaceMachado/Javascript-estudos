@@ -2,7 +2,7 @@
 
 let lista = [1,2,3,4,5,6];
 
-let novaLista = lista.map(function(item,index){
+let novaLista = lista.map((item,index) =>{
      console.log(lista[index]);
      console.log(index);
      console.log(item);
@@ -11,15 +11,12 @@ let novaLista = lista.map(function(item,index){
 
 
 
-let somar = lista.reduce(function(total,proximo){
-    return total + proximo;
-});
+let somar = lista.reduce((total,proximo) => total + proximo);
 
 console.log(somar);
 
-let find = lista.find(function(item){
-    return item=== 6;
-});
+let find = lista.find((item) => item=== 6);
+
 
 console.log(find);
 
