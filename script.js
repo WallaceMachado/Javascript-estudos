@@ -1,13 +1,8 @@
-var lista = [1,2,3];
+let nome = "leo";
+let sobrenome ="machado";
 
-for(var i in lista){
-    console.log(lista[i]);
-}
+let pessoa = "meu nome é:" + nome + " " + sobrenome;
+console.log(pessoa);
 
-for(let x in lista){
-    console.log(lista[x]);
-}
-
-console.log(i);
-console.log(x);// não é impresso pq o let só existe dentro do contexto que foi criado
-
+let pessoa2 = `meu nome é: ${nome} ${sobrenome}`;
+console.log(pessoa2);
