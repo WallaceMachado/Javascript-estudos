@@ -1,24 +1,16 @@
-//spread operator ...
+//rest operator ...
 
-let inicio = [1,2,3,4];
 
-let total = [...inicio,5,6,7,8,9];
 
-console.log(total);
-
-let total2 = [inicio,5,6,7,8,9];
-console.log(total2);
-
-function cadastro (info){
-    let novosDados = {
-        ...info,
-        cargo:"programador",
-        status: "true"
-    };
-
-    return novosDados;
+function comRestOperator (...x){//transforma em array
+    console.log(x);
 }
 
-console.log(cadastro({nome: "sara",sobrenome:"silva"}));
+function semRestOperator (x){
+    console.log(x);
+}
+
+comRestOperator(1,"machado","sara");
+semRestOperator(1,"machado","sara");
 
 
