@@ -1,23 +1,24 @@
-let nomes = ["leo","machado",10];
-let[nome]=nomes;
-console.log(nome);
+//spread operator ...
 
-let[nome1,nome2,idade]=nomes;
-console.log(nome1,nome2,idade);
+let inicio = [1,2,3,4];
 
-let{0:primeironome, 1:segundonome}=nomes;
-console.log(primeironome,segundonome);
+let total = [...inicio,5,6,7,8,9];
 
-const pessoa0 = {
-    nome0: "sara",
-    sobrenome0:"silva",
-    idade0:10
-};
+console.log(total);
 
-let{nome0,idade0} = pessoa0;
-console.log(nome0,idade0);
+let total2 = [inicio,5,6,7,8,9];
+console.log(total2);
 
-let{nome0:novonome} = pessoa0;
-console.log(novonome);
+function cadastro (info){
+    let novosDados = {
+        ...info,
+        cargo:"programador",
+        status: "true"
+    };
+
+    return novosDados;
+}
+
+console.log(cadastro({nome: "sara",sobrenome:"silva"}));
 
 
