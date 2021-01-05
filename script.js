@@ -2,21 +2,10 @@
 
 let lista = [1,2,3,4,5,6];
 
-let novaLista = lista.map((item,index) =>{
-     console.log(lista[index]);
-     console.log(index);
-     console.log(item);
-     
-});
+console.log(lista.includes(5)); // verifica se tem o item na lista
 
+let nome = "lucas";
 
-
-let somar = lista.reduce((total,proximo) => total + proximo);
-
-console.log(somar);
-
-let find = lista.find((item) => item=== 6);
-
-
-console.log(find);
+console.log(nome.endsWith('s'));// se termina com o que esta no parenteses pode ser letra ou numero palavras
+console.log(nome.startsWith('lu'));// verifica se começa como parametro
 
