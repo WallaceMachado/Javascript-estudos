@@ -1,8 +1,52 @@
 <script>
+  // variáveis e tipos de dados
+  // declaração
+  let name
 
-  let clima = true
-  clima = ""
+  // assignment or atraibuição de valores
 
-  console.log(typeof clima)
+  name = "wallace"
+
+  // tipo da variável
+  console.log(typeof name, name)
+
+  // multiplo argumentos na função
+  // console.log(name, typeof name)
+
+  // concatenando valores
+  console.log('o tipo da variável é: '+ typeof name + " e o valor é : " + name )
+
+  // interpolando valores com template literais or template strings
+  console.log(`o tipo da variável é: ${typeof name} e o valor é : ${name}`)
+
+  // Object
+
+  const person = {
+    name: 'wallace',
+    age: 25,
+    isAdmin: true,
+    cursos: ["js", "node"]
+  }
+
+  console.log(person)
+  console.log(person.age)
+  console.log(person.cursos[1])
+
+  // array
+
+  const animals = [
+    "lion",
+    "dog",
+    {
+      name: 'Cat',
+      age: 3
+    }
+  ]
+
+  console.log(animals)
+  console.log(animals[1])
+  console.log(animals[2].name)
+  console.log(animals.length)
+
 
 </script>
